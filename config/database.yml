@@ -1,7 +1,22 @@
-# default: &default
-#   adapter: sqlite3
-#   pool: 5
-#   timeout: 5000
+default: &default
+  adapter: postgresql
+  timeout: 5000
+
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: postgres
+  pool: 5
+  host: localhost
+
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: posgres
+  pool: 5
+  host: localhost
+
 #
 # development:
 #   <<: *default
