@@ -1,0 +1,42 @@
+<div class="row" id="all-tickets">
+  <div class="col-md-12" id="ticket-search">
+    <h3> Filter by:&nbsp;&nbsp;
+    <button id="date-button">Date</button>
+    <button id="client-button">Client</button>
+    <button id="employee-button">Employee</button>
+  </h3>
+  </div>
+
+<div class="col-md-12" id="ticket-export">
+  <h3>Export tickets from <input class="month-input" placeholder="month (two)"></input> / <input class="year-input" placeholder="year (full)"></input>
+  <button id="export-button">submit</button></h3>
+</div>
+
+
+  <div class="col-md-12" id="tickets-table">
+
+<table id="all-tickets-table">
+    <colgroup span="4"></colgroup>
+    <tr>
+      <th>Client</th>
+      <th>Employee</th>
+      <th>Date</th>
+      <th>Total Time</th>
+      <th>Type</th>
+      <th>Work</th>
+    </tr>
+
+    <% @tickets.each do |ticket| %>
+        <tr class="ticket-row-content">
+          <td><%= Client.find_by_id(ticket.client_id).name %></td>
+          <td><%= Employee.find_by_id(ticket.employee_id).name %></td>
+          <td><%= ticket.date %></td>
+          <td><%= ticket.total_time %></td>
+          <td><%= ticket.work_type %></td>
+          <td><%= ticket.work %></td>
+        </tr>
+      <% end %>
+</table>
+
+</div>
+</div>

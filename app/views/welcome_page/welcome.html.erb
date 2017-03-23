@@ -1,1 +1,16 @@
-<h1> Welcome to the IT Systems and Solutions Ticket App. </h1>
+<div class="row" id="log-in-page">
+  <div class="col-md-12">
+
+    <div class="log-in-form">
+      <h1>TICKETING LOG IN</h1>
+
+      <%=form_for @session do |f| %>
+        <%= f.label "Username: " %>
+        <%= f.text_field :username %><br>
+        <%= f.label "Password: " %>
+        <%= f.password_field :password %><br>
+        <%= f.submit %>
+      <% end %>
+    </div>
+  </div>
+</div>

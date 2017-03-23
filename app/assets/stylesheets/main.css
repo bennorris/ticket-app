@@ -1,0 +1,240 @@
+/* ADD TICKET FORM PAGE */
+
+#ticket-form label {
+  margin-right: 5px;
+}
+
+#add-ticket {
+  font-family: 'Crimson Text', serif;
+}
+
+#add-ticket h1 {
+  font-size: 3em;
+}
+
+.ticket-body {
+  padding-left: 2%;
+  padding-top: 2%;
+}
+
+.ticket-body label {
+  font-size: 2em;
+}
+
+.ticket-body select, .ticket-body input {
+  font-size: 1.25em;
+}
+
+.ticket-body input[type="radio"] {
+  margin-right: 1%;
+  margin-right: 1%;
+}
+
+.ticket-head {
+  padding-left: 2%;
+  background: #022e75;
+  color: white;
+  width: 100%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+/* HEADER */
+
+.log-in-title {
+  padding-left: 2%;
+  background: #e0e0e0;
+  width: 100%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  display: flex;
+  align-items: center;
+  font-family: 'Crimson Text', serif;
+
+}
+
+.log-in-title img {
+  float: left;
+}
+
+.log-in-title ul {
+  list-style: none;
+  display: inline-block;
+  width: 100%;
+
+}
+
+.log-in-title a {
+  font-size: 25px;
+  display: inline-block;
+  margin-right: 2%;
+  background-color: #022e75;
+  padding: 1%;
+  border-radius: 15px;
+  border: 3px solid #022e75;
+  float: left;
+}
+
+.log-in-title a {
+  color: white;
+}
+
+.log-in-title a:hover {
+  color: #022e75;
+  background-color: white;
+}
+
+/* TICKET SUCCESS PAGE */
+
+#ticket-success {
+  font-family: 'Crimson Text', serif;
+  text-align: center;
+}
+
+#success-header h1 {
+  font-size: 120px;
+  color: #022e75;
+}
+
+#ticket-success a {
+  font-size: 60px;
+  color: #323842;
+}
+
+#ticket-success a:hover {
+  color: #e25300;
+}
+
+/* LOG IN PAGE */
+
+#log-in-page {
+  font-family: 'Crimson Text', serif;
+}
+
+.log-in-form {
+  padding-left: 2%;
+  text-align: center;
+}
+
+.log-in-form h1 {
+  font-size: 80px;
+  padding-bottom: 2%;
+    color: #303A92;
+}
+
+.log-in-form label, .log-in-form input {
+  font-size: 30px;
+  margin-right: 1%;
+}
+
+.log-in-form input[type='text'], .log-in-form input[type='password'] {
+  border: none;
+  border-bottom: 2px solid black;
+}
+
+.log-in-form input[type="submit"] {
+  margin-top: 2%;
+}
+
+textarea[name="ticket[work]"], input[name="ticket[notes]"]  {
+  width: 50%;
+  height: 75px;
+  margin-bottom: 2%;
+  font-size: 25px;
+}
+
+#ticket-form input[type='submit'] {
+  background-color: #303A92;
+  color: white;
+  border: 2px solid #303A92;
+  margin-bottom: 3%;
+}
+
+#ticket-form input[type='submit']:hover {
+  color: #303A92;
+  background-color: white;
+}
+
+.formfield-1 * {
+  vertical-align: middle;
+  margin-bottom: 2%;
+}
+
+.formfield-2 * {
+  vertical-align: middle;
+  margin-bottom: 2%;
+}
+
+
+
+/* ALL TICKETS */
+
+#all-tickets {
+  font-family: 'Crimson Text', serif;
+}
+
+th, td {
+  border: 1px solid black;
+}
+
+table {
+  width: 75%;
+}
+
+#tickets-table {
+  margin-top: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5%;
+}
+
+#tickets-table th {
+  font-size: 25px;
+  padding: 0.5%;
+}
+
+#tickets-table td {
+  font-size: 20px;
+  padding: 0.5%;
+  overflow: scroll;
+}
+
+#ticket-search {
+  margin-top: 2%;
+  text-align: center;
+}
+
+#ticket-search button {
+  background-color: #303A92;
+  color: white;
+  border: 2px solid #303A92;
+}
+
+#ticket-search button:hover {
+  background-color: white;
+  color: #303A92;
+}
+
+#ticket-export {
+  text-align: center;
+}
+
+#ticket-export .month-input {
+  width: 10%;
+}
+
+#ticket-export .year-input {
+  width: 8%;
+}
+
+#ticket-export button {
+  background-color: #303A92;
+  color: white;
+  border: 2px solid #303A92;
+}
+
+#ticket-export button:hover {
+  background-color: white;
+  color: #303A92;
+}

@@ -1,0 +1,37 @@
+<div class="row" id="add-ticket">
+<div class="col-md-12">
+  <div class="ticket-head">
+    <h1>ADD A TICKET</h1>
+  </div>
+  <div class="ticket-body">
+    <%=form_for @ticket, :html => { :id => "ticket-form" } do |f| %>
+    <%=f.label "Client: "%>
+      <%=collection_select(:ticket, :client_id, Client.all, :id, :name ) %><br>
+      <%=f.label "Employee: " %>
+      <%=collection_select(:ticket, :employee_id, Employee.all, :id, :name ) %><br>
+      <%=f.label :total_time %>
+      <%=f.text_field :total_time %><br>
+      <%=f.label "Date: " %>
+      <%=f.date_select :date %><br>
+      <%=f.label "Type: " %>
+      <%=f.radio_button :work_type, 'Remote' %><%=f.label "Remote"%>
+      <%=f.radio_button :work_type, 'Onsite' %><%=f.label "Onsite"%><br>
+      <%=f.label :start_time %>
+      <%=f.text_field :start_time %><br>
+      <%=f.label "Status: " %>
+      <%=f.label "Open"%><%=f.radio_button :status, 'Open' %>
+      <%=f.label "Closed"%><%=f.radio_button :status, 'Closed' %><br>
+      <div class="formfield-1">
+      <%=f.label :work %>
+      <%=f.text_area :work, size: '100 x 4'%><br>
+      </div>
+      <div class="formfield-2">
+      <%=f.label :notes %>
+      <%=f.text_area :notes, size: '100 x 4' %><br>
+      </div>
+      <%=f.submit %>
+    <% end %>
+  </div>
+
+</div>
+</div>
